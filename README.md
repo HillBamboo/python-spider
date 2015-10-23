@@ -1,2 +1,10 @@
 # python-spider
-the collection of python spider
+
+## 简述
+&nbsp;&nbsp;这个项目包含我在学习爬虫过程中所做的代码片段及小项目,素材
+来源于网上的一些课程，博客上的教程，书上的代码片段，以及我的实践项目。
+
+&nbsp;&nbsp;这记录着一个初学者的学习过程，疏漏于不足在所难免，有缘看到
+此项目的朋友望不吝赐教，谢谢！
+
+**个人邮箱： bamboohill@outlook.com**
