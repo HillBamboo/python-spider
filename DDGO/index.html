@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DDGO</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    body{
+      /*background-color: #DDDDDD;*/
+      background-color: #fff;
+      /*margin: 0 100px;
+      padding: 0 auto;*/
+    }
+
+    .content{
+      background-color: rgb(250, 250, 250);
+      margin: 0 100px;
+    }
+
+    .jumbotron{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 30px 50px;
+      height: 300px;
+    }
+
+    .nav-pills{
+      margin-top: 10px;
+    }
+    .col-md-4{
+      height: 300px;
+    }
+    /*.carousel{
+      height: 300px;
+    }*/
+    .left{
+      float: left;
+      width: 75%;
+      /*border: 1px solid black;*/
+      /*background-color: blue;*/
+    }
+
+    .right{
+      margin-top: 0 0;
+      /*margin: auto 1px;*/
+      float: right;
+      width: 25%;
+      /*border: 1px solid black;*/
+      /*background-color: red;*/
+    }
+  
+    .footer{
+      /*position: top;*/
+      /*bottom: 0;*/
+      width: 100%;
+
+    }
+    .main-footer{
+      background-color: #202020;
+      height: 100px;
+    }
+
+    .copyright{
+      background-color: #303030;
+      height: 20px;
+    }
+
+    .jumbotron{
+      margin-bottom: 10px;
+      height: 400px;
+      background-image: url("img/fav (4).jpg");
+    }
+    </style>
+
+    <script type="text/JavaScript">
+      $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+  </head>
+  <body>
+<!-- 顶部导航条 -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DDGO</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="saler.html">商家</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">购物车 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html?w=reg">注册</a></li>
+        <li><a href="login.html?w=log">登录</a></li>
+        <!-- <li class="dropdown">
+          <a href="login.html?w=log" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 登录<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><!--导航条结束-->
+
+
+       <div class="jumbotron">
+  <h1>DD GO,您的最佳选择！</h1>
+  <p>DD GO,是一个即时校园电商平台，为广大的学生朋友提供快速、便捷的门对门的送货上门服务</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  了解更多
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">DDGO 简介</h4>
+      </div>
+      <div class="modal-body">
+      <p><img src="img/fav (1).jpg" alt="..." width="300px" height="300px"></p>
+        <p>
+          DDGO始创于2015年10月30日，致力于为广大的学生提供一个安全，快捷，便利的
+          购物平台，提供及时的送货上门服务，本着以学生为本的宗旨，为广大学生谋福利，以更低的价格购买更优质的产品。
+        </p>
+        <p>DD GO团队创始人XXX，团队成员XXX，XXX，XXX，XX。</p>
+        <p>团队初创，热忱欢迎您的加入！</p>
+        <p>
+          联系方式：ddgo520@163.com
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="content">
+  <div class="container-fluid left">
+
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (1).jpg" width="200px" height="200px" >
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (2).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (3).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (4).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (5).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (6).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (7).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (8).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (9).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (10).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (11).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="img/img (12).jpg" width="200px" height="200px">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 底部分页按钮 -->
+<nav>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+</div><!-- 底部分页按钮 -->
+
+<div class="right">
+    <!-- <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">最热门</a></li>
+  <li role="presentation"><a href="#">最新鲜</a></li>
+  <li role="presentation"><a href="#">最好玩</a></li>
+</ul> -->
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">最热门</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">最新鲜</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">最好玩</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">最热门的事情1</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最热门的事情2</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最热门的事情3</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最热门的事情4</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最热门的事情5</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最热门的事情6</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+    </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">最新鲜的事情1</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最新鲜的事情2</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最新鲜的事情3</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最新鲜的事情4</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最新鲜的事情5</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最新鲜的事情6</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+    </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">最好玩的事情1</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最好玩的事情2</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最好玩的事情3</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最好玩的事情4</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最好玩的事情5</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">最好玩的事情6</h4>
+        <p class="list-group-item-text">...</p>
+      </a>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
